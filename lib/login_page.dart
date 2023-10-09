@@ -7,8 +7,8 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 48, 46, 49),
-        body: Column(
-          child: Padding(
+        body: Column(children: [
+          Padding(
               padding: const EdgeInsets.all(60.0),
               child: AspectRatio(
                   aspectRatio: 3 / 4,
@@ -43,15 +43,11 @@ class LoginPage extends StatelessWidget {
                           ),
                           ElevatedButton(
                             onPressed: () {},
-                            child: const Text(
-                              "Ingresar",
-                              style: TextStyle(
-                                  color: Color.fromARGB(255, 109, 106, 106)),
-                            ),
+                            child: const Text("ngresar"),
                           ),
                           const Spacer(flex: 3),
                         ],
                       )))),
-        ));
+        ]));
   }
 }
