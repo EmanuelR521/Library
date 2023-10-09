@@ -8,7 +8,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 48, 46, 49),
         body: Column(
-          child: Padding(
+          children:[ Padding(
               padding: const EdgeInsets.all(60.0),
               child: AspectRatio(
                   aspectRatio: 3 / 4,
@@ -52,6 +52,8 @@ class LoginPage extends StatelessWidget {
                           const Spacer(flex: 3),
                         ],
                       )))),
-        ));
+        ]
+        )
+      );
   }
 }
