@@ -12,15 +12,15 @@ class MenuPrincipal extends StatelessWidget {
         Image.asset(
           'assets/images/fondo.jpeg',
           fit: BoxFit.cover,
-          width: double.infinity,
-          height: double.infinity,
+          width: 90,
+          height: 90,
         ),
         Positioned(
           top: 0, 
           bottom: 0,
           child: Container(
             width: 400,
-            height: double.infinity,
+            height: 90,
             color: const Color.fromARGB(160, 164,161,168),
             child: Column(
             children: [
@@ -43,9 +43,9 @@ class MenuPrincipal extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20), 
-              Container(
+              const SizedBox(
                 width: 300,
-                child: const Divider(
+                child: Divider(
                   color: Colors.black, // Color de la línea
                   height: 20, // Altura de la línea
                   thickness: 2, // Grosor de la línea
@@ -60,7 +60,7 @@ class MenuPrincipal extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                        builder: (_) => LibrosLeidos(),
+                        builder: (_) => const LibrosLeidos(),
                         ),
                       );
                     }, 
@@ -71,7 +71,7 @@ class MenuPrincipal extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-                      backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(217, 217, 217, 217)), 
+                      backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(217, 217, 217, 217)), 
                     ),
                     child: const Padding(
                       padding: EdgeInsets.all(20.0),
@@ -95,7 +95,7 @@ class MenuPrincipal extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-                      backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(217, 217, 217, 217)), 
+                      backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(217, 217, 217, 217)), 
                     ),
                     child: const Padding(
                       padding: EdgeInsets.all(20.0),
@@ -120,7 +120,7 @@ class MenuPrincipal extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-                      backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(217, 217, 217, 217)), 
+                      backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(217, 217, 217, 217)), 
                     ),
                     child: const Padding(
                       padding: EdgeInsets.all(20.0),
@@ -136,9 +136,9 @@ class MenuPrincipal extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 50), 
-              Container(
+              const SizedBox(
                 width: 300,
-                child: const Divider(
+                child: Divider(
                   color: Colors.black, // Color de la línea
                   height: 20, // Altura de la línea
                   thickness: 2, // Grosor de la línea
