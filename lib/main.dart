@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor:const  Color(0xff220A05)),
         useMaterial3: true,
       ),
-      home: const MenuPrincipal(),
+      home: const LoginPage(),
     );
   }
 }
