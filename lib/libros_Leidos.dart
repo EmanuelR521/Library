@@ -2,50 +2,50 @@ import 'package:flutter/material.dart';
 
 class LibrosLeidos extends StatelessWidget {
   const LibrosLeidos({super.key});
-  @override
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff220A05),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(80.0),
-          child: Container(
-            decoration: BoxDecoration(
-              color: const Color(0xff4F4D52),
-              borderRadius: BorderRadius.circular(30),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(40.0),
-              child: Column(
-                children: [
-                  Image.asset(
-                    'assets/images/icon.png',
-                    alignment: Alignment.center,
-                    width: 100,
-                  ),
-                  const SizedBox(height: 10),
-                  const Spacer(flex: 1),
-                  const Text(
-                    "INGRESO DE LIBROS \n            LEIDOS ",
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Color.fromARGB(255, 255, 255, 255),
+          padding: const EdgeInsets.all(40.0), 
+          child: AspectRatio(
+            aspectRatio: 3 / 4,
+            child: Container(
+              decoration: BoxDecoration(
+                color: const Color(0xff4F4D52),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(25.0), 
+                child: Column(
+                  children: [
+                    Image.asset(
+                      'assets/images/icon.png',
+                      alignment: Alignment.center,
+                      width: 65,
                     ),
-                  ),
-                  const SizedBox(height: 10),
-                  const Spacer(flex: 1),
-                  const Divider(
-                    color: Colors.white,
-                    height: 60,
-                    thickness: 0.6,
-                    indent: 0,
-                    endIndent: 0,
-                  ),
-                  const Spacer(flex: 1),
+                    const SizedBox(height: 10),
+                    const Text(
+                      "INGRESO DE LIBROS \n            LEIDOS ",
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Color.fromARGB(255, 255, 255, 255),
+                      ),
+                    ),
+                    const Divider(
+                      color: Colors.white,
+                      height: 40,
+                      thickness: 0.6,
+                      indent: 0,
+                      endIndent: 0,
+                    ),
+                  
                   Row(
+                    
                     children: [
                       const Text(
-                        "  Autor   ",
+                        "  AUTOR   ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
@@ -54,7 +54,7 @@ class LibrosLeidos extends StatelessWidget {
                       Expanded(
                         child: TextFormField(
                           decoration: InputDecoration(
-                            hintText: "Escribe el autor",
+                            hintText: "Escribe del autor",
                             filled: true,
                             fillColor: const Color.fromARGB(255, 109, 106, 106),
                             border: OutlineInputBorder(
@@ -62,6 +62,8 @@ class LibrosLeidos extends StatelessWidget {
                               borderSide: const BorderSide(
                                 color: Color(0xff481717),
                                 width: 20.0,
+                                style: BorderStyle.solid,
+        
                               ),
                             ),
                           ),
@@ -69,11 +71,11 @@ class LibrosLeidos extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       const Text(
-                        "  Titulo  ",
+                        "  TITULO  ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
@@ -89,7 +91,7 @@ class LibrosLeidos extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20.0),
                               borderSide: const BorderSide(
                                 color: Color(0xff481717),
-                                width: 20.0,
+                                width: 10.0,
                               ),
                             ),
                           ),
@@ -97,11 +99,11 @@ class LibrosLeidos extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       const Text(
-                        "  Genero ",
+                        "  GENERO ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
@@ -117,7 +119,7 @@ class LibrosLeidos extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20.0),
                               borderSide: const BorderSide(
                                 color: Color(0xff481717),
-                                width: 20.0,
+                                width: 10.0,
                               ),
                             ),
                           ),
@@ -125,11 +127,11 @@ class LibrosLeidos extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       const Text(
-                        "  Editorial",
+                        "  EDITORIAL",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
@@ -145,7 +147,7 @@ class LibrosLeidos extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20.0),
                               borderSide: const BorderSide(
                                 color: Color(0xff481717),
-                                width: 20.0,
+                                width: 10.0,
                               ),
                             ),
                           ),
@@ -153,11 +155,11 @@ class LibrosLeidos extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       const Text(
-                        "  Año      ",
+                        "  AÑO      ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
@@ -173,7 +175,7 @@ class LibrosLeidos extends StatelessWidget {
                               borderRadius: BorderRadius.circular(20.0),
                               borderSide: const BorderSide(
                                 color: Color(0xff481717),
-                                width: 20.0,
+                                width: 10.0,
                               ),
                             ),
                           ),
@@ -181,15 +183,15 @@ class LibrosLeidos extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const Spacer(flex: 1),
+              
                   const Divider(
                     color: Colors.white,
-                    height: 60,
+                    height: 40,
                     thickness: 0.6,
                     indent: 0,
                     endIndent: 0,
                   ),
-                  const Spacer(flex: 1),
+                  
                   Align(
                     alignment: Alignment.bottomCenter, 
                     child: Container(
@@ -199,7 +201,7 @@ class LibrosLeidos extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 15),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -259,7 +261,7 @@ class LibrosLeidos extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 15),
                         ],
                       ),
                     ),
@@ -270,6 +272,7 @@ class LibrosLeidos extends StatelessWidget {
           ),
         ),
       ),
+    )
     );
   }
 }
