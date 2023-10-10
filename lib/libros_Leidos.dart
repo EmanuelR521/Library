@@ -42,15 +42,14 @@ class LibrosLeidos extends StatelessWidget {
                     ),
                   
                   Row(
-                    
                     children: [
                       const Text(
-                        "  AUTOR   ",
+                        "  AUTOR       ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
                       ),
-                      const Spacer(),
+                      const SizedBox(width: 90),
                       Expanded(
                         child: TextFormField(
                           decoration: InputDecoration(
@@ -75,12 +74,12 @@ class LibrosLeidos extends StatelessWidget {
                   Row(
                     children: [
                       const Text(
-                        "  TITULO  ",
+                        "  TITULO      ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
                       ),
-                      const Spacer(),
+                      const SizedBox(width: 90),
                       Expanded(
                         child: TextFormField(
                           decoration: InputDecoration(
@@ -103,12 +102,12 @@ class LibrosLeidos extends StatelessWidget {
                   Row(
                     children: [
                       const Text(
-                        "  GENERO ",
+                        "  GENERO    ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
                       ),
-                      const Spacer(),
+                      const SizedBox(width: 90),
                       Expanded(
                         child: TextFormField(
                           decoration: InputDecoration(
@@ -129,15 +128,15 @@ class LibrosLeidos extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Row(
-                    children: [
+                    children: [    
                       const Text(
                         "  EDITORIAL",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
-                      ),
-                      const Spacer(),
-                      Expanded(
+                      ),    
+                      const SizedBox(width: 90),
+                      Expanded(  
                         child: TextFormField(
                           decoration: InputDecoration(
                             hintText: "Escribe la editorial",
@@ -159,12 +158,12 @@ class LibrosLeidos extends StatelessWidget {
                   Row(
                     children: [
                       const Text(
-                        "  AÑO      ",
+                        "  AÑO           ",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
                         ),
                       ),
-                      const Spacer(),
+                      const SizedBox(width: 90),
                       Expanded(
                         child: TextFormField(
                           decoration: InputDecoration(
