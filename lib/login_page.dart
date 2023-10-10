@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:library_ai/menu.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -55,7 +56,14 @@ class LoginPage extends StatelessWidget {
                             height: 20,
                           ),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => MenuPrincipal(),
+                                ),
+                              );
+                            },
                             child: const Text("Ingresar",textAlign: TextAlign.center, style: TextStyle( 
                               fontSize: 15,
                               color: Color.fromARGB(255, 200, 39, 39)
