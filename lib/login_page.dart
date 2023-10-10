@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
                                 labelText: "Usuario",
                                 filled: true,
                                 fillColor: const Color.fromARGB(255, 109, 106, 106),
-                                border: UnderlineInputBorder(borderRadius: BorderRadius.circular(10))
+                                border: UnderlineInputBorder(borderRadius: BorderRadius.circular(10)),
                               ),
                             ),
                           ),
@@ -56,6 +56,11 @@ class LoginPage extends StatelessWidget {
                             height: 20,
                           ),
                           ElevatedButton(
+<<<<<<< HEAD
+                            onPressed: () {},
+                            child: const Text(
+                              "Ingresar",textAlign: TextAlign.center, style: TextStyle( 
+=======
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -65,6 +70,7 @@ class LoginPage extends StatelessWidget {
                               );
                             },
                             child: const Text("Ingresar",textAlign: TextAlign.center, style: TextStyle( 
+>>>>>>> 427f5e6f5d67626dd6edbb53e491ab21b8217260
                               fontSize: 15,
                               color: Color.fromARGB(255, 200, 39, 39)
                             ),),
